@@ -1,0 +1,135 @@
+{
+  "version": "1.27.1",
+  "type": "fragment",
+  "content": {
+    "type": "panel",
+    "top": 0,
+    "left": 0,
+    "lock": false,
+    "id": "equalizer-@{parent.variables.channel_id}",
+    "visible": true,
+    "interaction": true,
+    "comments": "",
+    "width": 410,
+    "height": 100,
+    "expand": "false",
+    "variables": "@{parent.variables}",
+    "widgets": [
+      {
+        "type": "knob",
+        "top": 0,
+        "left": 0,
+        "lock": false,
+        "id": "equalizer-low-@{parent.variables.channel_id}",
+        "visible": true,
+        "interaction": true,
+        "design": "solid",
+        "range": {
+          "min": -24,
+          "max": 24
+        },
+        "logScale": false,
+        "sensitivity": 1,
+        "address": "/I/@{parent.variables.layer_id}/@{parent.variables.channel_id}/EQU/low",
+        "typeTags": "f",
+        "decimals": 2
+      },
+      {
+        "type": "knob",
+        "top": 0,
+        "left": 100,
+        "lock": false,
+        "id": "equalizer-mid-@{parent.variables.channel_id}",
+        "visible": true,
+        "interaction": true,
+        "design": "solid",
+        "range": {
+          "min": -24,
+          "max": 24
+        },
+        "logScale": false,
+        "sensitivity": 1,
+        "address": "/I/@{parent.variables.layer_id}/@{parent.variables.channel_id}/EQU/mid",
+        "typeTags": "f",
+        "decimals": 2
+      },
+      {
+        "type": "knob",
+        "top": 0,
+        "left": 200,
+        "lock": false,
+        "id": "equalizer-high-@{parent.variables.channel_id}",
+        "visible": true,
+        "interaction": true,
+        "design": "solid",
+        "range": {
+          "min": -24,
+          "max": 24
+        },
+        "logScale": false,
+        "sensitivity": 1,
+        "address": "/I/@{parent.variables.layer_id}/@{parent.variables.channel_id}/EQU/high",
+        "typeTags": "f",
+        "decimals": 2
+      },
+      {
+        "type": "knob",
+        "top": 0,
+        "left": 300,
+        "lock": false,
+        "id": "equalizer-master-@{parent.variables.channel_id}",
+        "visible": true,
+        "interaction": true,
+        "design": "solid",
+        "range": {
+          "min": -24,
+          "max": 24
+        },
+        "logScale": false,
+        "sensitivity": 1,
+        "address": "/I/@{parent.variables.layer_id}/@{parent.variables.channel_id}/EQU/master",
+        "typeTags": "f",
+        "decimals": 2
+      },
+      {
+        "type": "knob",
+        "top": 100,
+        "left": 0,
+        "lock": false,
+        "id": "equalizer-low_mid-@{parent.variables.channel_id}",
+        "visible": true,
+        "interaction": true,
+        "design": "solid",
+        "range": {
+          "min": 0.0,
+          "max": 1000.0
+        },
+        "logScale": false,
+        "sensitivity": 1,
+        "address": "/I/@{parent.variables.layer_id}/@{parent.variables.channel_id}/EQU/low_mid",
+        "typeTags": "f",
+        "decimals": 2
+      },
+      {
+        "type": "knob",
+        "top": 100,
+        "left": 100,
+        "lock": false,
+        "id": "equalizer-mid_high-@{parent.variables.channel_id}",
+        "visible": true,
+        "interaction": true,
+        "design": "solid",
+        "range": {
+          "min": 1000,
+          "max": 20000
+        },
+        "logScale": false,
+        "sensitivity": 1,
+        "address": "/I/@{parent.variables.layer_id}/@{parent.variables.channel_id}/EQU/mid_high",
+        "typeTags": "f",
+        "decimals": 2
+      }
+    ],
+    "tabs": []
+  }
+}
