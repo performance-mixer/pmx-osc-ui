@@ -11,8 +11,8 @@
     "visible": true,
     "interaction": true,
     "comments": "",
-    "width": 830,
-    "height": 550,
+    "width": 420,
+    "height": 950,
     "expand": "false",
     "colorText": "auto",
     "colorWidget": "auto",
@@ -51,18 +51,66 @@
     "widgets": [
       {
         "type": "fragment",
-        "top": 0,
+        "top": 210,
         "left": 0,
         "lock": false,
-        "id": "fragment-compressor-@{parent.variables.channel_id}",
+        "id": "fragment-compressor-@{parent.variables.layer_id}-@{parent.variables.channel_id}",
         "visible": true,
         "interaction": true,
         "comments": "",
         "width": 410,
-        "height": 380,
+        "height": 370,
         "expand": "false",
         "css": "",
         "file": "compressor_details_fragment.json",
+        "fallback": "",
+        "props": {
+          "variables": {
+            "channel_id": "@{parent.variables.channel_id}",
+            "layer_id": "@{parent.variables.layer_id}"
+          }
+        },
+        "address": "auto",
+        "variables": "@{parent.variables}"
+      },
+      {
+        "type": "fragment",
+        "top": 0,
+        "left": 0,
+        "lock": false,
+        "id": "fragment_saturator-@{parent.variables.layer_id}-@{parent.variables.channel_id}",
+        "visible": true,
+        "interaction": true,
+        "comments": "",
+        "width": 410,
+        "height": 210,
+        "expand": "false",
+        "css": "",
+        "file": "saturator_details_fragment.json",
+        "fallback": "",
+        "props": {
+          "variables": {
+            "channel_id": "@{parent.variables.channel_id}",
+            "layer_id": "@{parent.variables.layer_id}"
+          }
+        },
+        "address": "auto",
+        "variables": "@{parent.variables}"
+      },
+      {
+        "type": "fragment",
+        "top": 580,
+        "left": 0,
+        "lock": false,
+        "id": "fragment-equalizer-@{parent.variables.layer_id}-@{parent.variables.channel_id}",
+        "visible": true,
+        "interaction": true,
+        "comments": "",
+        "width": 410,
+        "height": 360,
+        "expand": "false",
+        "css": "",
+        "file": "equalizer_details_fragment.json",
         "fallback": "",
         "props": {
           "variables": {
