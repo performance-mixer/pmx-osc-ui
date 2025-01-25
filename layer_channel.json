@@ -549,7 +549,7 @@
         "value": "",
         "default": "",
         "linkId": "",
-        "address": "/G/@{parent.variables.layer_id}/@{parent.variables.group_channel_id}/EQU/master",
+        "address": "/L/@{parent.variables.layer_id}/EQU/master",
         "preArgs": "",
         "typeTags": "",
         "decimals": 2,
